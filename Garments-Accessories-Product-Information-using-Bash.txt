@@ -1,0 +1,270 @@
+echo "=============WELCOME TO BILASH SUTA GHAR============="
+echo
+"=============PRODUCT INFO============================"
+echo "|||....PRODUCT
+NAME...........QUANTITY...........PRICE......|||"
+echo "1....Sewing
+Threads...........01/10Piece..........25tk/250tk"
+echo "2....Sewing Machine
+Needle....01/10Packet............60tk"
+echo "3....Machine
+Oil..............01/10Litre.............140tk"
+echo "4....Silicon
+Oil..............01/10Litre.............380tk"
+echo "5...Garments
+Interlining......01/10Piece.............200tk"
+echo "What product do you want to
+buy?"
+read choice
+if (($choice == 1))
+then
+echo "How many product do you want to
+buy?\n"
+echo "1. 01Piece 2. 10Piece"
+read sewingthreads_quantity
+if
+(($sewingthreads_quantity ==1))
+then
+echo "How many Sewing Threads do you
+want?\n"
+read sewingthreads_quantity
+price= `expr $sewingthreads_quantity \*
+25`
+elif (($sewingthreads_quantity == 10))
+then
+echo "How many
+Sewing Threads do you want?"
+read sewingthreads_quantity
+price= `expr
+$sewingthreads_quantity \* 250`
+fi
+elif ((choice == 2))
+then
+echo "How many Sewing Machine Needles do you want to buy?"
+echo
+"1.01Piece 2.10Pieces"
+read sewingmachineneedle_quantity
+if
+(($sewingmachineneedle_quantity == 1))
+then
+echo "How many
+Sewing Machine Needles do you want?"
+read sewingmachineneedle_quantity
+price= `expr $sewingmachineneedle_quantity \* 60`
+elif(($sewingmachineneedle_quantity == 2))
+then
+echo "How many
+Sewing Machine Needles do you want?"
+read sewingmachineneedle_quantity
+price= `expr $sewingmachineneedle_quantity \* 600`
+fi
+elif ((choice
+== 3))
+then
+echo "How much Machine Oil do you want to buy?"
+echo
+"1.01Litre 2.10Litre"
+read machineoil_quantity
+if(($machineoil_quantity
+== 1))
+then
+echo "How much Machine Oil do you want?"
+read machineoil_quantity
+price= `expr $machineoil_quantity \*
+140`
+elif(($machineoil_quantity == 2))
+then
+echo "How
+much Machine Oil do you want?"
+read machinenoil_quantity
+price=
+`expr $machineoil_quantity \* 1400`
+elif ((choice == 4))
+then
+echo
+"How much Silicon Oil do you want to buy?"
+echo "1.01Litre
+2.10Litre"
+read siliconoil_quantity
+if(($siliconoil_quantity == 1))
+then
+echo "How much Silicon Oil do you want?"
+read
+siliconil_quantity
+price= `expr $siliconoil_quantity \* 380`
+elif(($siliconoil_quantity == 2))
+then
+echo "How much Silicon
+Oil do you want?"
+read siliconoil_quantity
+price= `expr
+$siliconoil_quantity \* 3800`
+fi
+elif ((choice == 5))
+then
+echo "How many Garments Interlining do you want to buy?"
+echo "1.01Piece
+2.10Piece"
+read garmentsinterlining_quantity
+if(($garmentsinterlining_quantity
+== 1))
+then
+echo "How many Garments Interlining you want to
+buy?"
+read garmentsinterlining_quantity
+price=
+`expr $garmentsinterlining_quantity \* 200`
+elif(($garmentsinterlining_quantity == 2))
+then
+echo "How many Garments Interlining you want to buy?"
+read garmentsinterlining_quantity
+price= `expr
+$garmentsinterlining_quantity \* 2000`
+fi
+echo "Do you want to order 1 more product?"
+echo "1. Yes 2.No"
+read order_choice2
+if ((order_choice2 ==
+1))
+then
+echo "What do you want to order as a second product?"
+read choice
+if (($choice == 1))
+then
+echo "How many product do you
+want to buy?\n"
+echo "1. 01Piece 2. 10Piece"
+read sewingthreads_quantity
+if (($sewingthreads_quantity ==1))
+then
+echo "How many Sewing Threads do you
+want?\n"
+read sewingthreads_quantity
+price2= `expr $sewingthreads_quantity \*
+25`
+elif (($sewingthreads_quantity == 10))
+then
+echo "How many
+Sewing Threads do you want?\n"
+read sewingthreads_quantity
+price2= `expr
+$sewingthreads_quantity \* 250`
+fi
+elif ((choice == 2))
+then
+echo "How many Sewing Machine Needles do you want to buy?"
+echo
+"1.01Piece 2.10Pieces"
+read sewingmachineneedle_quantity
+if
+(($sewingmachineneedle_quantity == 1))
+then
+echo "How many
+Sewing Machine Needles do you want?"
+read sewingmachineneedle_quantity
+price2= `expr $sewingmachineneedle_quantity \* 60`
+elif(($sewingmachineneedle_quantity == 2))
+then
+echo "How many
+Sewing Machine Needles do you want?"
+read sewingmachineneedle_quantity
+price2= `expr $sewingmachineneedle_quantity \* 600`
+fi
+elif ((choice ==
+3))
+then
+echo "How much Silicon Oil do you want to buy?"
+echo
+"1.01Litre 2.10Litre"
+read machineoil_quantity
+if(($siliconoil_quantity
+== 1))
+then
+echo "How much Silicon Oil do you want?"
+read siliconoil_quantity
+price2= `expr $siliconoil_quantity \*
+380`
+elif(($machineoil_quantity == 2))
+then
+echo "How
+much Machine Oil do you want?"
+read machinenoil_quantity
+price2=
+`expr $machineoil_quantity \* 1400`
+fi
+elif ((choice == 3))
+then
+echo "How much Machine Oil do you want to buy?"
+echo "1.01Litre 2.10Litre"
+read machineoil_quantity
+if(($machineoil_quantity == 1))
+then
+echo "How much Machine Oil do you want?"
+read
+machineoil_quantity
+price2= `expr $machineoil_quantity \* 140`
+elif(($machineoil_quantity == 2))
+then
+echo "How much Machine
+Oil do you want?"
+read machinenoil_quantity
+price2= `expr
+$machineoil_quantity \* 1400`
+fi
+elif ((choice == 4))
+then
+echo
+"How much Silicon Oil do you want to buy?"
+echo "1.01Litre
+2.10Litre"
+read siliconoil_quantity
+if(($siliconoil_quantity == 1))
+then
+echo "How much Silicon Oil do you want?"
+read
+siliconil_quantity
+price2= `expr $siliconoil_quantity \* 380`
+elif(($siliconoil_quantity == 2))
+then
+echo "How much Silicon
+Oil do you want?"
+read siliconoil_quantity
+price2= `expr
+$siliconoil_quantity \* 3800`
+fi
+elif ((choice == 5))
+then
+echo "How many Garments Interlining do you want to buy?"
+echo "1.01Piece
+2.10Piece"
+read garmentsinterlining_quantity
+if(($garmentsinterlining_quantity
+== 1))
+then
+echo "How many Garments Interlining you want to
+buy?"
+read garmentsinterlining_quantity
+price2=
+`expr $garmentsinterlining_quantity \* 200`
+elif(($garmentsinterlining_quantity == 2))
+then
+echo "How many Garments Interlining you want to buy?"
+read garmentsinterlining_quantity
+price2= `expr
+$garmentsinterlining_quantity \* 2000`
+fi
+echo
+"Your Total Bill is:"$((price+price2))
+echo "Please pay the bill and wait for
+collecting your product!"
+echo "Thank You for purchasing product from our shop!
+:)"
+elif ((order_choice2 == 2))
+then
+echo "Your Total Bill is:"$price
+echo
+"Please pay the bill and wait for collecting your product!"
+echo "Thank You for
+purchasing product from our shop! :)"
+fi
+
